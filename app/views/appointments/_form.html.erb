@@ -1,0 +1,4 @@
+<%= form_with model: @appointment do |form| %>
+  <%= select_date Date.today, :prefix => :start_date %>
+  <%= form.submit "Create" %>
+<% end %>
